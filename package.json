@@ -16,7 +16,6 @@
     "build": "ng build",
     "build:prod": "npm run build --configuration production --aot",
     "test": "ng test",
-    "watch": "ng build --watch --configuration production",
     "test:coverage": "rimraf coverage && npm run test -- --code-coverage",
     "lint": "ng lint",
     "lint:fix": "ng lint ngx-admin-demo --fix",
