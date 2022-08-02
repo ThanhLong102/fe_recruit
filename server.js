@@ -13,11 +13,11 @@ const forceSSL = function () {
     next();
   }
 };
-app.use(express.static('./dist/ngx-admin'));
+app.use(express.static('./dist/recruit-angular'));
 
 
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname,'/dist/ngx-admin/index.html'));
+  res.sendFile(path.join(__dirname,'/dist/recruit-angular/index.html'));
 });
 
 app.use(forceSSL());
